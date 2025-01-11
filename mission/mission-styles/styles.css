@@ -1,0 +1,48 @@
+body {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.body-content {
+    border: 2px solid lightgray;
+    max-width: 600px;
+    padding: 50px;
+    margin: 50px auto;
+}
+
+header {
+    letter-spacing: 3px;
+    border-bottom: 1px solid lightgray;
+}
+
+header h1 {
+    font-size: 47px;
+    font-weight: normal;
+}
+
+header h2 {
+    color: #006EB6;
+    font-size: 21px;
+    margin-top: -15px;
+    font-weight: normal;
+}
+
+.main-p {
+    text-align: left;
+    padding-top: 30px;
+}
+
+ol {
+    text-align: left;
+}
+
+li {
+    padding: 10px;
+}
+
+.logo {
+    padding-top: 40px;
+    padding-bottom: 5px;
+    width: 150px;
+}
