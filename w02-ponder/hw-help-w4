@@ -1,0 +1,14 @@
+let img = document.querySelector("img");
+let filename = img.getAttribute("src");
+console.log(filename);
+
+let parts = filename.split("-")
+console.log("img" + parts[0]);
+// Or [1] for the second part
+
+let newPara = "<p>This is a new paragraph</p>";
+
+img.insertAdjacentHTML("afterend", newPara);
+
+window.addEventListener("resize", handleResize);
+
