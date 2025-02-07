@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Lato&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif&display=swap');
+
+:root {
+    --color1: #0D5C63;
+    --color2: #2a8f8f;
+    --color3: #78CDD7;
+    --body-font: Helvetica, Arial, sans-serif;
+    --headline-font: Lora, Impact, serif;
+    }
+
+body {
+    font-family: var(--body-font);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--headline-font);
+    text-align: center;
+    color: var(--color1);
+    padding: 20px;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: var(--headline-font);
+    color: var(--color2);
+    font-size: 30px;
+}
+
+a {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+
+.main-nav {
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    justify-content: end;
+    justify-items: end;
+    padding: 20px 35px 20px 20px;
+    border: solid var(--color3);
+    border-left: none;
+    border-right: none;
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.filter {
+    border: solid var(--color3);
+    margin-top: 10px;
+}
+
+.book-details {
+    border-right: thin solid var(--color3);
+    text-align: right;
+    padding-right: 20px;
+    /* this used to have padding-top: 10px (instead of margin-top: 15px), in case you want to revert it */
+    margin-top: 15px;
+}
+
+.date {
+    font-size: 19px;
+}
+
+.review-content {
+    padding: 0px 20px 20px 20px;
+}
+
+.review-content a {
+    text-decoration: none;
+}
+
+.review-content figure {
+    display: grid;
+    place-items: center;
+}
+
+.skiptocontent {
+    position: absolute;
+    top: -40px;
+    background: var(--color1);
+}
+
+.skiptocontent a {
+    color: var(--color3);
+}
+
+.skiptocontent a:focus {
+    top: 0px;
+}
