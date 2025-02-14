@@ -59,13 +59,13 @@ main {
 article {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-right: 20px; /* remove if you want articles to be perfectly aligned on smaller screens */
 }
 
 .filter {
     border: solid var(--color3);
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .book-details {
