@@ -59,6 +59,7 @@ main {
 article {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    margin-top: 25px;
 }
 
 .filter {
@@ -72,10 +73,12 @@ article {
     padding-right: 20px;
     /* this used to have padding-top: 10px (instead of margin-top: 15px), in case you want to revert it */
     margin-top: 15px;
+    line-height: .75em;
 }
 
 .date {
     font-size: 19px;
+    line-height: 1.2em;
 }
 
 .review-content {
