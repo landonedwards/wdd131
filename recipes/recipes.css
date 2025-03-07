@@ -90,7 +90,7 @@ img {
 }
 
 .recipe-name {
-    color: #23a7d0;
+    color: var(--primary-color);
     font-family: var(--headline-font);
     font-weight: 300;
     font-size: 2em;
@@ -132,7 +132,8 @@ img {
 }
 
 .flaticon a {
-    color: #23a7d0;
+    color: #127bb8;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 600px) {
