@@ -11,7 +11,18 @@
     <script src="engage.js" defer></script>
   </head>
   <body>
-    <table>
+    <!-- hide in css -->
+    <label for="charSelect">Select a character</label>
+    <select id="charSelect" name="charSelect">
+      <option value="">Select</option>
+    </select>
+
+    <label for="classSelect">Select a class</label>
+    <select id="classSelect" name="classSelect">
+      <option value="">Select</option>
+    </select>
+
+    <table class="growths">
       <tr>
         <th>Name</th>
         <th>STR</th>

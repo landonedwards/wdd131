@@ -44,62 +44,103 @@ charDetails = [
 ]
 
 const classes = [
-    { className: "Dragon Child", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 15, Def: 10, Res: 10, Lck: 5, Bld: 5 },
-    { className: "Divine Dragon", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 15, Def: 15, Res: 15, Lck: 10, Bld: 5 },
-    { className: "Fell Child", HP: 10, Str: 10, Mag: 25, Dex: 10, Spd: 5, Def: 10, Res: 25, Lck: null, Bld: null },
-    { className: "Noble (Male)", HP: 15, Str: 15, Mag: null, Dex: 5, Spd: 5, Def: 20, Res: 5, Lck: 15, Bld: null },
-    { className: "Avenir", HP: 15, Str: 15, Mag: null, Dex: 5, Spd: 10, Def: 25, Res: 5, Lck: 20, Bld: 5 },
-    { className: "Noble (Female)", HP: null, Str: 5, Mag: 10, Dex: 5, Spd: 5, Def: 5, Res: 10, Lck: 20, Bld: null },
-    { className: "Vidame", HP: 5, Str: 10, Mag: 15, Dex: 5, Spd: 5, Def: 5, Res: 15, Lck: 20, Bld: null },
-    { className: "Lord (Diamant)", HP: 15, Str: 20, Mag: null, Dex: 10, Spd: 10, Def: 10, Res: null, Lck: 5, Bld: null },
-    { className: "Successeur", HP: 15, Str: 20, Mag: null, Dex: 10, Spd: 15, Def: 15, Res: null, Lck: 10, Bld: 5 },
-    { className: "Lord (Alcryst)", HP: 10, Str: 10, Mag: null, Dex: 25, Spd: 10, Def: 10, Res: null, Lck: 5, Bld: null },
-    { className: "Tireur d’élite", HP: 10, Str: 10, Mag: null, Dex: 30, Spd: 10, Def: 15, Res: 5, Lck: 5, Bld: null },
-    { className: "Wing Tamer", HP: 5, Str: null, Mag: 20, Dex: null, Spd: null, Def: 10, Res: 20, Lck: null, Bld: null },
-    { className: "Lindwurm", HP: 5, Str: null, Mag: 25, Dex: 5, Spd: null, Def: 15, Res: 25, Lck: null, Bld: null },
-    { className: "Sentinel (Male)", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 5, Def: 20, Res: null, Lck: 5, Bld: null },
-    { className: "Picket", HP: 10, Str: 15, Mag: null, Dex: 10, Spd: 10, Def: 20, Res: 5, Lck: 5, Bld: 5 },
-    { className: "Sentinel (Female)", HP: 10, Str: 5, Mag: null, Dex: 15, Spd: 15, Def: 5, Res: 15, Lck: null, Bld: null },
-    { className: "Cupido", HP: 10, Str: 5, Mag: 5, Dex: 20, Spd: 20, Def: 5, Res: 20, Lck: null, Bld: null },
-    { className: "Sword Fighter", HP: 10, Str: 10, Mag: null, Dex: 15, Spd: 20, Def: null, Res: 15, Lck: 10, Bld: null },
-    { className: "Swordmaster", HP: 10, Str: 10, Mag: null, Dex: 15, Spd: 20, Def: null, Res: 15, Lck: 15, Bld: null },
-    { className: "Hero", HP: 15, Str: 15, Mag: null, Dex: 10, Spd: 15, Def: null, Res: 10, Lck: 15, Bld: null },
-    { className: "Lance Fighter", HP: 10, Str: 10, Mag: 5, Dex: 20, Spd: 5, Def: 10, Res: 5, Lck: null, Bld: null },
-    { className: "Halberdier", HP: 10, Str: 15, Mag: 5, Dex: 20, Spd: 10, Def: 15, Res: 5, Lck: 5, Bld: null },
-    { className: "Royal Knight", HP: 5, Str: 10, Mag: 15, Dex: 15, Spd: 15, Def: 5, Res: 20, Lck: 10, Bld: null },
-    { className: "Axe Fighter", HP: 25, Str: 20, Mag: null, Dex: 5, Spd: 10, Def: 5, Res: null, Lck: null, Bld: 5 },
-    { className: "Berserker", HP: 30, Str: 30, Mag: null, Dex: 5, Spd: 10, Def: 5, Res: null, Lck: null, Bld: 10 },
-    { className: "Warrior", HP: 25, Str: 20, Mag: null, Dex: 10, Spd: 15, Def: 10, Res: 5, Lck: null, Bld: 5 },
-    { className: "Archer", HP: 10, Str: 15, Mag: null, Dex: 25, Spd: 10, Def: 5, Res: null, Lck: 5, Bld: null },
-    { className: "Sniper", HP: 15, Str: 15, Mag: null, Dex: 30, Spd: 10, Def: 10, Res: null, Lck: 10, Bld: null },
-    { className: "Bow Knight", HP: 10, Str: 10, Mag: null, Dex: 20, Spd: 20, Def: null, Res: 15, Lck: 15, Bld: null },
-    { className: "Sword Armor", HP: 20, Str: 15, Mag: null, Dex: 10, Spd: null, Def: 30, Res: null, Lck: null, Bld: 5 },
-    { className: "Lance Armor", HP: 20, Str: 15, Mag: null, Dex: 10, Spd: null, Def: 30, Res: null, Lck: null, Bld: 5 },
-    { className: "Axe Armor", HP: 20, Str: 15, Mag: null, Dex: 10, Spd: null, Def: 30, Res: null, Lck: null, Bld: 5 },
-    { className: "General", HP: 25, Str: 20, Mag: null, Dex: 10, Spd: null, Def: 30, Res: null, Lck: null, Bld: 10 },
-    { className: "Great Knight", HP: 20, Str: 15, Mag: null, Dex: 15, Spd: null, Def: 25, Res: 10, Lck: 5, Bld: 5 },
-    { className: "Sword Cavalier", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 10, Def: 10, Res: 10, Lck: 10, Bld: null },
-    { className: "Lance Cavalier", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 10, Def: 10, Res: 10, Lck: 10, Bld: null },
-    { className: "Axe Cavalier", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 10, Def: 10, Res: 10, Lck: 10, Bld: null },
-    { className: "Paladin", HP: 15, Str: 15, Mag: null, Dex: 10, Spd: 15, Def: 15, Res: 15, Lck: 10, Bld: null },
-    { className: "Wolf Knight", HP: 10, Str: 5, Mag: null, Dex: 15, Spd: 20, Def: 5, Res: 20, Lck: 20, Bld: null },
-    { className: "Mage", HP: null, Str: null, Mag: 25, Dex: 5, Spd: null, Def: null, Res: 25, Lck: 5, Bld: null },
-    { className: "Sage", HP: null, Str: null, Mag: 30, Dex: 5, Spd: null, Def: null, Res: 30, Lck: 15, Bld: null },
-    { className: "Mage Knight", HP: 5, Str: 5, Mag: 25, Dex: null, Spd: 5, Def: 10, Res: 25, Lck: 5, Bld: null },
-    { className: "Martial Monk", HP: null, Str: 10, Mag: 25, Dex: null, Spd: null, Def: 10, Res: 20, Lck: 10, Bld: null },
-    { className: "Martial Master", HP: 5, Str: 10, Mag: 20, Dex: null, Spd: null, Def: 15, Res: 25, Lck: 10, Bld: null },
-    { className: "High Priest", HP: null, Str: null, Mag: 25, Dex: null, Spd: 5, Def: null, Res: 30, Lck: 30, Bld: null },
-    { className: "Sword Flier", HP: 5, Str: 10, Mag: 5, Dex: 10, Spd: 10, Def: null, Res: 10, Lck: 10, Bld: null },
-    { className: "Lance Flier", HP: 5, Str: 10, Mag: 5, Dex: 10, Spd: 10, Def: null, Res: 10, Lck: 10, Bld: null },
-    { className: "Axe Flier", HP: 5, Str: 10, Mag: 5, Dex: 10, Spd: 10, Def: null, Res: 10, Lck: 10, Bld: null },
-    { className: "Griffin Knight", HP: null, Str: 10, Mag: 15, Dex: 15, Spd: 20, Def: null, Res: 15, Lck: 15, Bld: null },
-    { className: "Wyvern Knight", HP: 20, Str: 20, Mag: null, Dex: 10, Spd: 5, Def: 20, Res: 5, Lck: 5, Bld: 5 },
-    { className: "Thief", HP: 5, Str: 10, Mag: null, Dex: 20, Spd: 15, Def: 15, Res: 5, Lck: 15, Bld: null },
-    { className: "Dancer", HP: 5, Str: 10, Mag: null, Dex: 5, Spd: 15, Def: 10, Res: 20, Lck: 20, Bld: null },
-    { className: "Fell Child (Nel)", HP: 10, Str: 15, Mag: 10, Dex: 10, Spd: 15, Def: 15, Res: 15, Lck: null, Bld: 5 },
-    { className: "Fell Child (Rafal)", HP: 15, Str: 20, Mag: null, Dex: 5, Spd: 5, Def: 20, Res: 10, Lck: null, Bld: 10 },
-    { className: "Melusine", HP: 10, Str: 10, Mag: 10, Dex: 10, Spd: 15, Def: 10, Res: 10, Lck: null, Bld: 5 },
-    { className: "Enchanter", HP: 5, Str: 15, Mag: 15, Dex: 15, Spd: 10, Def: 5, Res: 5, Lck: 15, Bld: 5 },
-    { className: "Mage Cannoneer", HP: 15, Str: 10, Mag: null, Dex: 15, Spd: 5, Def: 20, Res: 5, Lck: 10, Bld: 10 }
+    { id: 1, className: "Dragon Child", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 15, Def: 10, Res: 10, Lck: 5, Bld: 5 },
+    { id: 2, className: "Divine Dragon", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 15, Def: 15, Res: 15, Lck: 10, Bld: 5 },
+    { id: 3, className: "Fell Child", HP: 10, Str: 10, Mag: 25, Dex: 10, Spd: 5, Def: 10, Res: 25, Lck: null, Bld: null },
+    { id: 4, className: "Noble (Alfred)", HP: 15, Str: 15, Mag: null, Dex: 5, Spd: 5, Def: 20, Res: 5, Lck: 15, Bld: null },
+    { id: 5, className: "Avenir", HP: 15, Str: 15, Mag: null, Dex: 5, Spd: 10, Def: 25, Res: 5, Lck: 20, Bld: 5 },
+    { id: 6, className: "Noble (Céline)", HP: null, Str: 5, Mag: 10, Dex: 5, Spd: 5, Def: 5, Res: 10, Lck: 20, Bld: null },
+    { id: 7, className: "Vidame", HP: 5, Str: 10, Mag: 15, Dex: 5, Spd: 5, Def: 5, Res: 15, Lck: 20, Bld: null },
+    { id: 8, className: "Lord (Diamant)", HP: 15, Str: 20, Mag: null, Dex: 10, Spd: 10, Def: 10, Res: null, Lck: 5, Bld: null },
+    { id: 9, className: "Successeur", HP: 15, Str: 20, Mag: null, Dex: 10, Spd: 15, Def: 15, Res: null, Lck: 10, Bld: 5 },
+    { id: 10, className: "Lord (Alcryst)", HP: 10, Str: 10, Mag: null, Dex: 25, Spd: 10, Def: 10, Res: null, Lck: 5, Bld: null },
+    { id: 11, className: "Tireur d’élite", HP: 10, Str: 10, Mag: null, Dex: 30, Spd: 10, Def: 15, Res: 5, Lck: 5, Bld: null },
+    { id: 12, className: "Wing Tamer", HP: 5, Str: null, Mag: 20, Dex: null, Spd: null, Def: 10, Res: 20, Lck: null, Bld: null },
+    { id: 13, className: "Lindwurm", HP: 5, Str: null, Mag: 25, Dex: 5, Spd: null, Def: 15, Res: 25, Lck: null, Bld: null },
+    { id: 14, className: "Sentinel (Timerra)", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 5, Def: 20, Res: null, Lck: 5, Bld: null },
+    { id: 15, className: "Picket", HP: 10, Str: 15, Mag: null, Dex: 10, Spd: 10, Def: 20, Res: 5, Lck: 5, Bld: 5 },
+    { id: 16, className: "Sentinel (Fogado)", HP: 10, Str: 5, Mag: null, Dex: 15, Spd: 15, Def: 5, Res: 15, Lck: null, Bld: null },
+    { id: 17, className: "Cupido", HP: 10, Str: 5, Mag: 5, Dex: 20, Spd: 20, Def: 5, Res: 20, Lck: null, Bld: null },
+    { id: 18, className: "Sword Fighter", HP: 10, Str: 10, Mag: null, Dex: 15, Spd: 20, Def: null, Res: 15, Lck: 10, Bld: null },
+    { id: 19, className: "Swordmaster", HP: 10, Str: 10, Mag: null, Dex: 15, Spd: 20, Def: null, Res: 15, Lck: 15, Bld: null },
+    { id: 20, className: "Hero", HP: 15, Str: 15, Mag: null, Dex: 10, Spd: 15, Def: null, Res: 10, Lck: 15, Bld: null },
+    { id: 21, className: "Lance Fighter", HP: 10, Str: 10, Mag: 5, Dex: 20, Spd: 5, Def: 10, Res: 5, Lck: null, Bld: null },
+    { id: 22, className: "Halberdier", HP: 10, Str: 15, Mag: 5, Dex: 20, Spd: 10, Def: 15, Res: 5, Lck: 5, Bld: null },
+    { id: 23, className: "Royal Knight", HP: 5, Str: 10, Mag: 15, Dex: 15, Spd: 15, Def: 5, Res: 20, Lck: 10, Bld: null },
+    { id: 24, className: "Axe Fighter", HP: 25, Str: 20, Mag: null, Dex: 5, Spd: 10, Def: 5, Res: null, Lck: null, Bld: 5 },
+    { id: 25, className: "Berserker", HP: 30, Str: 30, Mag: null, Dex: 5, Spd: 10, Def: 5, Res: null, Lck: null, Bld: 10 },
+    { id: 26, className: "Warrior", HP: 25, Str: 20, Mag: null, Dex: 10, Spd: 15, Def: 10, Res: 5, Lck: null, Bld: 5 },
+    { id: 27, className: "Archer", HP: 10, Str: 15, Mag: null, Dex: 25, Spd: 10, Def: 5, Res: null, Lck: 5, Bld: null },
+    { id: 28, className: "Sniper", HP: 15, Str: 15, Mag: null, Dex: 30, Spd: 10, Def: 10, Res: null, Lck: 10, Bld: null },
+    { id: 29, className: "Bow Knight", HP: 10, Str: 10, Mag: null, Dex: 20, Spd: 20, Def: null, Res: 15, Lck: 15, Bld: null },
+    { id: 30, className: "Sword Armor", HP: 20, Str: 15, Mag: null, Dex: 10, Spd: null, Def: 30, Res: null, Lck: null, Bld: 5 },
+    { id: 31, className: "Lance Armor", HP: 20, Str: 15, Mag: null, Dex: 10, Spd: null, Def: 30, Res: null, Lck: null, Bld: 5 },
+    { id: 32, className: "Axe Armor", HP: 20, Str: 15, Mag: null, Dex: 10, Spd: null, Def: 30, Res: null, Lck: null, Bld: 5 },
+    { id: 33, className: "General", HP: 25, Str: 20, Mag: null, Dex: 10, Spd: null, Def: 30, Res: null, Lck: null, Bld: 10 },
+    { id: 34, className: "Great Knight", HP: 20, Str: 15, Mag: null, Dex: 15, Spd: null, Def: 25, Res: 10, Lck: 5, Bld: 5 },
+    { id: 35, className: "Sword Cavalier", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 10, Def: 10, Res: 10, Lck: 10, Bld: null },
+    { id: 36, className: "Lance Cavalier", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 10, Def: 10, Res: 10, Lck: 10, Bld: null },
+    { id: 37, className: "Axe Cavalier", HP: 10, Str: 10, Mag: null, Dex: 10, Spd: 10, Def: 10, Res: 10, Lck: 10, Bld: null },
+    { id: 38, className: "Paladin", HP: 15, Str: 15, Mag: null, Dex: 10, Spd: 15, Def: 15, Res: 15, Lck: 10, Bld: null },
+    { id: 39, className: "Wolf Knight", HP: 10, Str: 5, Mag: null, Dex: 15, Spd: 20, Def: 5, Res: 20, Lck: 20, Bld: null },
+    { id: 40, className: "Mage", HP: null, Str: null, Mag: 25, Dex: 5, Spd: null, Def: null, Res: 25, Lck: 5, Bld: null },
+    { id: 41, className: "Sage", HP: null, Str: null, Mag: 30, Dex: 5, Spd: null, Def: null, Res: 30, Lck: 15, Bld: null },
+    { id: 42, className: "Mage Knight", HP: 5, Str: 5, Mag: 25, Dex: null, Spd: 5, Def: 10, Res: 25, Lck: 5, Bld: null },
+    { id: 43, className: "Martial Monk", HP: null, Str: 10, Mag: 25, Dex: null, Spd: null, Def: 10, Res: 20, Lck: 10, Bld: null },
+    { id: 44, className: "Martial Master", HP: 5, Str: 10, Mag: 20, Dex: null, Spd: null, Def: 15, Res: 25, Lck: 10, Bld: null },
+    { id: 45, className: "High Priest", HP: null, Str: null, Mag: 25, Dex: null, Spd: 5, Def: null, Res: 30, Lck: 30, Bld: null },
+    { id: 46, className: "Sword Flier", HP: 5, Str: 10, Mag: 5, Dex: 10, Spd: 10, Def: null, Res: 10, Lck: 10, Bld: null },
+    { id: 47, className: "Lance Flier", HP: 5, Str: 10, Mag: 5, Dex: 10, Spd: 10, Def: null, Res: 10, Lck: 10, Bld: null },
+    { id: 48, className: "Axe Flier", HP: 5, Str: 10, Mag: 5, Dex: 10, Spd: 10, Def: null, Res: 10, Lck: 10, Bld: null },
+    { id: 49, className: "Griffin Knight", HP: null, Str: 10, Mag: 15, Dex: 15, Spd: 20, Def: null, Res: 15, Lck: 15, Bld: null },
+    { id: 50, className: "Wyvern Knight", HP: 20, Str: 20, Mag: null, Dex: 10, Spd: 5, Def: 20, Res: 5, Lck: 5, Bld: 5 },
+    { id: 51, className: "Thief", HP: 5, Str: 10, Mag: null, Dex: 20, Spd: 15, Def: 15, Res: 5, Lck: 15, Bld: null },
+    { id: 52, className: "Dancer", HP: 5, Str: 10, Mag: null, Dex: 5, Spd: 15, Def: 10, Res: 20, Lck: 20, Bld: null },
+    { id: 53, className: "Fell Child (Nel)", HP: 10, Str: 15, Mag: 10, Dex: 10, Spd: 15, Def: 15, Res: 15, Lck: null, Bld: 5 },
+    { id: 54, className: "Fell Child (Rafal)", HP: 15, Str: 20, Mag: null, Dex: 5, Spd: 5, Def: 20, Res: 10, Lck: null, Bld: 10 },
+    { id: 55, className: "Melusine", HP: 10, Str: 10, Mag: 10, Dex: 10, Spd: 15, Def: 10, Res: 10, Lck: null, Bld: 5 },
+    { id: 56, className: "Enchanter", HP: 5, Str: 15, Mag: 15, Dex: 15, Spd: 10, Def: 5, Res: 5, Lck: 15, Bld: 5 },
+    { id: 57, className: "Mage Cannoneer", HP: 15, Str: 10, Mag: null, Dex: 15, Spd: 5, Def: 20, Res: 5, Lck: 10, Bld: 10 }
 ]
+
+const characterDropdown = document.querySelector("#charSelect");
+
+function populateCharacterDropdown() {
+    
+    characters.forEach(function (character) {
+        let option = document.createElement("option");
+
+        option.value = character.id;
+        option.textContent = character.charName;
+        characterDropdown.appendChild(option);
+    })
+}
+
+const classDropdown = document.querySelector("#classSelect");
+
+function populateClassDropdown() {
+    
+    classes.forEach(function (characterClass) {
+        let option = document.createElement("option");
+
+        option.value = characterClass.id;
+        option.textContent = characterClass.className;
+        classDropdown.appendChild(option);
+    })
+}
+
+tableBody = document.querySelector(".growths")
+
+function updateTable(characterId) {
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+    example: <td>${char.charName}</td>
+
+    `;
+}
+
+populateCharacterDropdown()
+populateClassDropdown()
+
 
