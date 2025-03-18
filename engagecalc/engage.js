@@ -131,16 +131,87 @@ function populateClassDropdown() {
 
 tableBody = document.querySelector(".growths")
 
-function updateTable(characterId) {
-    const row = document.createElement("tr");
+function addGrowths(charGrowth, classGrowth) {
+    const charValue = charGrowth || 0;
+    const classValue = classGrowth || 0;
 
-    row.innerHTML = `
-    example: <td>${char.charName}</td>
-
-    `;
+    return charValue + classValue;
 }
 
-populateCharacterDropdown()
-populateClassDropdown()
+function updateTable() {
+
+    tableBody.innerHTML = "";
+
+    const characterId = document.querySelector("#charSelect").value;
+    const classId = document.querySelector("#classSelect").value;
+    const row = document.createElement("tr");
+
+    let char;
+    if (characterId) {
+        char = characters.find(c => c.id == characterId);
+    }
+    else {
+        char = null;
+    }
+
+    let charClass;
+    if (classId) {
+        charClass = classes.find(c => c.id == classId);
+    }
+    else {
+        charClass = null;
+    }
+
+    if (char && charClass) {
+
+        row.innerHTML = `
+        <td>${char.charName} + ${charClass.className}</td>
+        <td>${addGrowths(char.HP, charClass.HP)}</td>
+        <td>${addGrowths(char.Str, charClass.Str)}</td>
+        <td>${addGrowths(char.Mag, charClass.Mag)}</td>
+        <td>${addGrowths(char.Dex, charClass.Dex)}</td>
+        <td>${addGrowths(char.Spd, charClass.Spd)}</td>
+        <td>${addGrowths(char.Def, charClass.Def)}</td>
+        <td>${addGrowths(char.Res, charClass.Res)}</td>
+        <td>${addGrowths(char.Lck, charClass.Lck)}</td>
+        <td>${addGrowths(char.Bld, charClass.Bld)}</td>
+        `;
+        tableBody.appendChild(row);
+
+    } else if (char) {
+        row.innerHTML = `
+        <td>${char.charName}</td>
+        <td>${char.HP}</td>
+        <td>${char.Str}</td>
+        <td>${char.Mag}</td>
+        <td>${char.Dex}</td>
+        <td>${char.Spd}</td>
+        <td>${char.Def}</td>
+        <td>${char.Res}</td>
+        <td>${char.Lck}</td>
+        <td>${char.Bld}</td>
+        `;
+        tableBody.appendChild(row);
+    } else if (charClass) {
+        row.innerHTML = `
+        <td>${charClass.className}</td>
+        <td>${charClass.HP}</td>
+        <td>${charClass.Str}</td>
+        <td>${charClass.Mag}</td>
+        <td>${charClass.Dex}</td>
+        <td>${charClass.Spd}</td>
+        <td>${charClass.Def}</td>
+        <td>${charClass.Res}</td>
+        <td>${charClass.Lck}</td>
+        <td>${charClass.Bld}</td>
+        `;
+        tableBody.appendChild(row);
+    }
+}
+
+populateCharacterDropdown();
+populateClassDropdown();
 
 
+characterDropdown.addEventListener("change", updateTable);
+classDropdown.addEventListener("change", updateTable);
