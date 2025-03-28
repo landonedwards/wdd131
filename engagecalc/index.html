@@ -3,37 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fire Emblem Engage Character Guide</title>
+    <title>Fire Emblem Engage Growth Calculator</title>
     <meta name="author" content="Landon Edwards" />
-    <meta name="description" content="PLACEHOLDER" />
-    <link rel="icon" href="PLACEHOLDER" />
+    <meta
+      name="description"
+      content="This page will help you calculate the growths of your chosen character and class in the game, Fire Emblem Engage."
+    />
+    <link rel="icon" href="images/engraving-imgs/engrave-lyn.png" />
     <link rel="stylesheet" href="styles/engage.css" />
     <script src="engage.js" defer></script>
   </head>
   <body>
-    <!-- hide in css -->
-    <label for="charSelect">Select a character</label>
-    <select id="charSelect" name="charSelect">
-      <option value="">Select</option>
-    </select>
+    <header>
+      <div class="menuButtonContainer">
+        <button class="menuButton">Menu</button>
+      </div>
+      <nav>
+        <ul class="mainNav">
+          <li><a href="index.html">Growth Calculator</a></li>
+          <li><a href="charsearch.html">Character Search</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <label for="classSelect">Select a class</label>
-    <select id="classSelect" name="classSelect">
-      <option value="">Select</option>
-    </select>
+    <main>
+      <h1>
+        <span class="redText">Engage</span>
+        <span class="blueText">Calculator</span>
+      </h1>
 
-    <table class="growths">
-      <tr>
-        <th>Name</th>
-        <th>STR</th>
-        <th>MAG</th>
-        <th>DEX</th>
-        <th>SPD</th>
-        <th>DEF</th>
-        <th>RES</th>
-        <th>LCK</th>
-        <th>BLD</th>
-      </tr>
-    </table>
+      <p class="instructions">
+        Please select a character and/or class to receive their total growths.
+      </p>
+
+      <div class="dropdownContainer">
+        <div class="characterDropdown">
+          <label for="charSelect">Character</label>
+          <select id="charSelect" name="charSelect">
+            <option value="">Select</option>
+          </select>
+        </div>
+
+        <div class="classDropdown">
+          <label for="classSelect">Class</label>
+          <select id="classSelect" name="classSelect">
+            <option value="">Select</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="weaponSection">
+        <div class="weaponContainer"></div>
+      </div>
+
+      <div class="tableContainer">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>HP</th>
+              <th>STR</th>
+              <th>MAG</th>
+              <th>DEX</th>
+              <th>SPD</th>
+              <th>DEF</th>
+              <th>RES</th>
+              <th>LCK</th>
+              <th>BLD</th>
+            </tr>
+          </thead>
+          <tbody class="growths"></tbody>
+        </table>
+      </div>
+
+      <div class="infoParagraph">
+        <details>
+          <summary>What are growths?</summary>
+          <p class="growthDescription">
+            Each character has a chance to increase one of their stats when they
+            level up; this is called a growth. Classes also have their own
+            respective growths. These are added to a character's base growths if
+            they belong to that class. This calculator will help you determine
+            what classes to put your units into. Generally speaking, a growth of
+            over 50% in a key stat (such as STR/MAG, DEF/RES, or SPD) is
+            considered to be good. A 50% growth in a stat means that, on
+            average, the character will increase that stat by one every two
+            level ups. However, key stats vary based on the class and its role
+            in your army.
+          </p>
+        </details>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerContainer">
+        <p>©2025 Landon Edwards</p>
+      </div>
+    </footer>
   </body>
 </html>

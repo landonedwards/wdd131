@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fire Emblem Engage Character Search</title>
+    <meta name="author" content="Landon Edwards" />
+    <meta
+      name="description"
+      content="This page allows you to search for any character in Fire Emblem Engage."
+    />
+    <link rel="icon" href="images/engraving-imgs/engrave-leif.png" />
+    <link rel="stylesheet" href="styles/engage.css" />
+    <script src="engage.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="menuButtonContainer">
+        <button class="menuButton">Menu</button>
+      </div>
+      <nav>
+        <ul class="mainNav">
+          <li><a href="index.html">Growth Calculator</a></li>
+          <li><a href="charsearch.html">Character Search</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1><span class="blueText">Character Search</span></h1>
+      <p class="searchInstructions">
+        Enter a name to search for a specific character.
+      </p>
+
+      <div class="searchContainer">
+        <label for="searchBox"></label>
+        <input
+          id="searchBox"
+          name="user-search"
+          type="text"
+          placeholder="Enter a name"
+        />
+        <button>
+          <img src="images/search.svg" alt="search icon" id="searchIcon" />
+        </button>
+      </div>
+
+      <div class="tableContainer">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>HP</th>
+              <th>STR</th>
+              <th>MAG</th>
+              <th>DEX</th>
+              <th>SPD</th>
+              <th>DEF</th>
+              <th>RES</th>
+              <th>LCK</th>
+              <th>BLD</th>
+            </tr>
+          </thead>
+          <tbody class="growths"></tbody>
+        </table>
+      </div>
+
+      <div class="infoParagraph">
+        <details>
+          <summary>How can I use this?</summary>
+          <p class="searchDescription">
+            You can use this page to view and search for any of the playable characters in Fire Emblem Engage. 
+            Even if you don't know their whole name, other characters will automatically be filtered out 
+            as you add letters to your search. Characters are returned in alphabetical order. On the far 
+            left is each character's unique sprite as it appears in-game.
+          </p>
+        </details>
+    </main>
+    <footer>
+      <div class="footerSearchContainer">
+        <p>©2025 Landon Edwards</p>
+      </div>
+    </footer>
+  </body>
+</html>
