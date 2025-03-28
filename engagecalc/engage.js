@@ -37,12 +37,6 @@ const characters = [
     { id: 36, charName: "Madeline", HP: 75, Str: 50, Mag: 20, Dex: 15, Spd: 15, Def: 55, Res: 25, Lck: 25, Bld: 10, image: "images/char-sprite/madeline.png" }
 ]
 
-charDetails = [
-    {
-        id: 1, reclass: "PLACEHOLDER", sklSynrgy: "PLACEHOLDER", recruited: "PLACEHOLDER", 
-    }
-]
-
 const classes = [
     { id: 1, className: "Dragon Child", HP: 10, Str: 10, Mag: 0, Dex: 10, Spd: 15, Def: 10, Res: 10, Lck: 5, Bld: 5, weaponType: ["Sword"] },
     { id: 2, className: "Divine Dragon", HP: 10, Str: 10, Mag: 0, Dex: 10, Spd: 15, Def: 15, Res: 15, Lck: 10, Bld: 5, weaponType: ["Sword", "Arts"] },
